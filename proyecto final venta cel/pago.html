@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación - Tienda de Teléfonos Móviles</title>
+    <link rel="stylesheet" href="stilopago.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+            color: black; /* Texto negro */
+            padding: 40px 0 20px; /* Ajusta el padding superior */
+            text-align: center;
+            position: relative;
+            border-bottom: none; /* Asegura que no haya un borde inferior */
+        }
+        header h1 {
+            margin: 0; /* Asegura que no haya margen adicional */
+        }
+        nav {
+            background-color: white; /* Fondo blanco */
+            margin: 0; /* Elimina el margen para evitar espacio adicional */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: black; /* Texto negro */
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid black; /* Contorno negro */
+            border-radius: 5px; /* Bordes redondeados */
+            display: block;
+            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: rgb(0, 0, 0); /* Fondo negro en hover */
+            color: white; /* Texto blanco en hover */
+        }
+        section {
+            padding: 20px;
+            margin: 0; /* Elimina el margen para evitar espacio adicional */
+            background-color: white; /* Fondo blanco para la sección */
+        }
+        #payment {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px; /* Ancho máximo para centrar */
+            background-color: #ffffff; /* Fondo claro */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de profundidad */
+            text-align: center; /* Centraliza el contenido */
+        }
+        #payment-form {
+            margin-top: 20px;
+            text-align: center; /* Centra el contenido del formulario */
+        }
+        #payment-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        #payment-form input {
+            margin-bottom: 12px;
+            padding: 8px;
+            width: 100%;
+            max-width: 400px; /* Máximo ancho de los campos */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block; /* Asegura que los inputs se comporten como bloques */
+            margin-left: auto; /* Centrarlos horizontalmente */
+            margin-right: auto; /* Centrarlos horizontalmente */
+        }
+        #payment-form button {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #payment-form button:hover {
+            background-color: #353535;
+        }
+        #back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #back-link a {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0); /* Fondo negro */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid rgb(0, 0, 0); /* Contorno negro */
+        }
+        #back-link a:hover {
+            background-color: red; /* Fondo rojo en hover */
+            color: white; /* Texto blanco en hover */
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 735px; /* Ajustado para centrar el texto */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AREA DE FACTURACION</h1>
+    </header>
+    <nav>
+        <!-- Eliminados los enlaces de navegación -->
+    </nav>
+    <section id="payment">
+        <h2>Resumen de la compra</h2>
+        <div id="cart-summary"></div>
+        <form id="payment-form">
+            <h3>Información de pago</h3>
+            <label for="name">Nombre completo:</label>
+            <input placeholder="Su nombre" type="text" id="name" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input placeholder="example@gmail.com" type="email" id="email" required>
+            <br>
+            <label for="card">Número de tarjeta:</label>
+            <input placeholder="0000-0000-0000-0000" type="text" id="card" required>
+            <br>
+            <label for="cedula">Número de Cédula:</label>
+            <input placeholder="000-0000000-0" type="text" id="cedula" required>
+            <br>
+            <button type="submit">Realizar pago</button>
+        </form>
+        <div id="back-link">
+            <a href="proyectofinal.html">Volver a la tienda</a>
+        </div>
+    </section>
+    <footer>
+        <p>Contacto: smartphoneItla@gmail.com | Tel: +123 456 7890</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

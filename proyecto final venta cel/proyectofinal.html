@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mund2Movil</title>
+    <link rel="stylesheet" href="stilo.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .phone {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .phone img {
+            max-width: 100%;
+            height: auto;
+        }
+        .phone button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .phone button:hover {
+            background-color: #333;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #contact {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: transparent; /* Fondo transparente */
+            color: #000; /* Color de texto negro */
+            border: none; /* Eliminar borde */
+            padding: 15px; /* Espaciado interno */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de profundidad */
+            z-index: 1000; /* Asegura que el área de contacto esté sobre otros elementos */
+        }
+        #ayuda {
+            background-color: transparent; /* Fondo transparente */
+            color: #000; /* Texto negro */
+            padding: 20px; /* Espaciado interno */
+            margin: 20px; /* Espaciado externo */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de profundidad */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mund2Movil</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#phones">Teléfonos</a></li>
+            <li><a href="#contact">Contactos</a></li>
+            <li><a href="#ayuda">Preguntas</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Bienvenido a nuestra tienda de teléfonos móviles</h2>
+        <p>Aquí encontrarás los mejores dispositivos del mercado.</p>
+    </section>
+    <section id="phones">
+        <h2>Nuestros Teléfonos</h2>
+        <div class="phone">
+            <img src="iphone14.jpg" alt="iphone14">
+            <h3>Iphone 14 PRO MAX</h3>
+            <p>Precio: $1000us</p>
+            <button onclick="selectPhone('Iphone 14 PRO MAX', 1000)">Comprar</button>
+        </div>
+
+        <div class="phone">
+            <img src="iphone13.jpg" alt="iphone13">
+            <h3>IPHONE 13 PRO MAX</h3>
+            <p>Precio: $600us</p>
+            <button onclick="selectPhone('IPHONE 13 PRO MAX', 600)">Comprar</button>
+        </div>
+
+        <div class="phone">
+            <img src="iphone12.jpg" alt="iphone12">
+            <h3>IPHONE 12</h3>
+            <p>Precio: $300us</p>
+            <button onclick="selectPhone('IPHONE 12', 300)">Comprar</button>
+        </div>
+
+        <div class="phone">
+            <img src="iphone11.jpg" alt="iphone11">
+            <h3>IPHONE 11 PRO MAX</h3>
+            <p>Precio: $400us</p>
+            <button onclick="selectPhone('IPHONE 11 PRO MAX', 400)">Comprar</button>
+        </div>
+
+        <div class="phone">
+            <img src="iphone x.jpg" alt="iphone x">
+            <h3>IPHONE X</h3>
+            <p>Precio: $200us</p>
+            <button onclick="selectPhone('IPHONE X', 200)">Comprar</button>
+        </div>
+
+        <div class="phone">
+            <img src="iphone 8.jpg" alt="iphone8">
+            <h3>IPHONE 8 PLUS</h3>
+            <p>Precio: $180us</p>
+            <button onclick="selectPhone('IPHONE 8 PLUS', 180)">Comprar</button>
+        </div>
+    </section>
+    <section id="ayuda">
+        <h2>Preguntas</h2>
+        <p>Si tienes dudas, aquí tienes las respuestas:</p>
+        <p><b>1-¿Aceptamos devoluciones?</b><br>
+            -Claro siempre y cuando no haya pasado más de una semana.</p>
+        <p><b>2-¿Garantía?</b><br>
+            -Ofrecemos 3 meses de garantía siempre y cuando se trate de fallos de fábrica.</p>
+        <p><b>3-¿Reparaciones?</b><br>
+            -Si compraste tu dispositivo con nosotros y ya no tienes garantía te hacemos un descuento del 60% en todos tipos de reparaciones.</p>
+    </section>
+    <footer>
+        <p>Contacto: Mund2Soporte@gmail.com | Tel: +829-702-5874</p>
+    </footer>
+    <section id="contact">
+        <h2>Contactos</h2>
+        <p>Puedes contactarnos a través de los siguientes medios:</p>
+        <ul>
+            <li>Email: Mund2Soporte@gmail.com</li>
+            <li>Teléfono: +829-702-5874</li>
+            <li>Dirección: Calle Principal #12, Santo Domingo</li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
+</html>
